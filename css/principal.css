@@ -1,0 +1,35 @@
+.principal__produto {
+    position: relative;
+}
+
+.produto__seta {
+    background-color: var(--branco);
+    border-radius: 100%;
+    padding: 11px 13px;
+    position: absolute;
+    transition: all .3s;
+}
+
+.produto__seta:hover {
+    background-color: rgba(209, 209, 209, 0.795);
+}
+
+.produto__seta:active {
+    background-color: rgb(161, 160, 160);
+}
+
+.seta-esquerda {
+    left: 0;
+    margin-left: 1em;
+    top: 50%;
+}
+
+.produto__imagem {
+    width: 100vw;
+}
+
+.seta-direita {
+    margin-right: 1em;
+    right: 0;
+    top: 50%;
+}
