@@ -1,0 +1,14 @@
+/* Variáveis de estilos gerais */
+:root {
+    /* Fontes */
+    --font-family: 'Kumbh-sans';
+    --font-weight-400: 400;
+    --font-weight-700: 700; 
+    /* Cores */
+    --fundo-cabecalho: #FFFFFF;
+}
+
+body {
+    font-family: var(--font-family);
+    font-weight: var(--font-weight-400);
+}

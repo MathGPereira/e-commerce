@@ -1,0 +1,15 @@
+.cabecalho {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 50px repeat(3, auto);
+    padding: 1.5em .5em;
+}
+
+.icone {
+    background-color: transparent;
+    border: none;
+}
+
+.cabecalho__foto-perfil {
+    width: 35px;
+}
