@@ -7,6 +7,7 @@
     border-radius: 100%;
     padding: 11px 13px;
     position: absolute;
+    top: 25%;
     transition: all .3s;
 }
 
@@ -21,7 +22,6 @@
 .seta-esquerda {
     left: 0;
     margin-left: 1em;
-    top: 50%;
 }
 
 .produto__imagem {
@@ -31,5 +31,75 @@
 .seta-direita {
     margin-right: 1em;
     right: 0;
-    top: 50%;
+}
+
+.produto__corpo {
+    width: 85vw;
+    margin: auto;
+}
+
+.produto__subtitulo {
+    color: var(--laranja);
+    font-weight: var(--font-weight-700);
+    margin: 1em 0;
+}
+
+.produto__titulo {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.2em;
+}
+
+.produto__descricao {
+    color: rgb(104, 112, 125);
+    line-height: 1.5em;
+    margin: 1.3em 0;
+}
+
+.produto__precos {
+    align-items: center;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(2, auto) 1fr;
+}
+
+.produto__preco-descontado {
+    font-size: 30px;
+    font-weight: 700;
+    margin-right: .5em;
+}
+
+.produto__desconto {
+    background-color: rgb(255, 237, 224);
+    border-radius: 5px;
+    color: var(--laranja);
+    font-weight: var(--font-weight-700);
+    padding: .4em;
+}
+
+.produto__preco-normal {
+    color: hsl(220, 14%, 75%);
+    justify-self: end;
+    text-decoration: line-through;
+    font-weight: var(--font-weight-700)
+}
+
+.produto__quantidade {
+    background-color: rgb(247, 248, 253);
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 0;
+    padding: 1em;
+}
+
+.produto__modificador {
+    background-color: transparent;
+    border: none;
+}
+
+.quantidade {
+    background-color: transparent;
+    border: none;
+    text-align: center;
 }

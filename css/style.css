@@ -1,13 +1,14 @@
 /* Variáveis de estilos gerais */
 :root {
     /* Fontes */
-    --font-family: 'Kumbh-sans';
+    --font-family: 'Kumbh Sans';
     --font-weight-400: 400;
     --font-weight-700: 700;
     --font-size: 16px;
     /* Cores */
     --fundo-cabecalho: #FFFFFF;
     --branco: #FFFFFF;
+    --laranja: rgb(255, 125, 26);
 }
 
 body {
