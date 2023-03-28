@@ -5,6 +5,7 @@
 .produto__seta {
     background-color: var(--branco);
     border-radius: 100%;
+    cursor: pointer;
     padding: 11px 13px;
     position: absolute;
     top: 25%;
@@ -42,6 +43,7 @@
     color: var(--laranja);
     font-weight: var(--font-weight-700);
     margin: 1em 0;
+    text-transform: uppercase;
 }
 
 .produto__titulo {
@@ -96,10 +98,43 @@
 .produto__modificador {
     background-color: transparent;
     border: none;
+    cursor: pointer;
 }
 
 .quantidade {
     background-color: transparent;
     border: none;
     text-align: center;
+}
+
+.quantidade::-webkit-inner-spin-button, .quantidade::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+.produtos__adicionar-carrinho {
+    align-items: center;
+    background-color: var(--laranja);
+    border: none;
+    border-radius: 8px;
+    box-shadow: 1px 1px 5px rgba(70, 69, 69, 0.534);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    left: 50%;
+    margin-bottom: 1em;
+    padding: 1em;
+    transition: all .3s ease-in-out;
+    width: 100%;
+}
+
+.produtos__adicionar-carrinho:hover {
+    background-color: rgb(241, 107, 11);
+}
+
+.produtos__adicionar-carrinho i {
+    margin-right: 10px;
+}
+
+.adicionar-carrinho__texto {
+    color: var(--branco);
 }

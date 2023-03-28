@@ -8,8 +8,10 @@
 .icone {
     background-color: transparent;
     border: none;
+    cursor: pointer;
 }
 
 .cabecalho__foto-perfil {
+    cursor: pointer;
     width: 35px;
 }
