@@ -9,6 +9,7 @@
     --fundo-cabecalho: #FFFFFF;
     --branco: #FFFFFF;
     --laranja: rgb(255, 125, 26);
+    --preto: #000000;
 }
 
 body {
@@ -16,4 +17,8 @@ body {
     font-size: var(--font-size);
     font-weight: var(--font-weight-400);
     width: 100vw;
+}
+
+.cabecalho__opaco, .principal__opaco {
+    opacity: .6;
 }

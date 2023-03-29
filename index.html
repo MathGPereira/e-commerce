@@ -9,6 +9,7 @@
 		<link type="text/css" rel="stylesheet" href="./css/style.css">
 		<link type="text/css" rel="stylesheet" href="./css/cabecalho.css">
 		<link type="text/css" rel="stylesheet" href="./css/principal.css">
+		<link type="text/css" rel="stylesheet" href="./css/menu-lateral.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
@@ -37,6 +38,34 @@
 			</button>
 			<img src="./images/image-avatar.png" alt="Foto de perfil do usuário logado" class="cabecalho__foto-perfil">
 		</header>
+		<aside class="lateral">
+			<button class="lateral__sair">
+				<i aria-label="Fechar menu lateral">
+					<svg width="14" height="15" xmlns="http://www.w3.org/2000/svg">
+						<path d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z" fill="#69707D" fill-rule="evenodd"/>
+					</svg>
+				</i>
+			</button>
+			<nav class="lateral__menu-navegacao">
+				<ul class="menu-navegacao__lista-links">
+					<li class="lista-links__link">
+						<a href="#" class="menu-navegacao__link">Coleções</a>
+					</li>
+					<li class="lista-links__link">
+						<a href="#" class="menu-navegacao__link">Homem</a>
+					</li>
+					<li class="lista-links__link">
+						<a href="#" class="menu-navegacao__link">Mulher</a>
+					</li>
+					<li class="lista-links__link">
+						<a href="#" class="menu-navegacao__link">Sobre</a>
+					</li>
+					<li class="lista-links__link">
+						<a href="#" class="menu-navegacao__link">Contato</a>
+					</li>
+				</ul>
+			</nav>
+		</aside>
 		<main class="principal">
 			<article class="principal__produto">
 				<svg width="12" height="18" xmlns="http://www.w3.org/2000/svg" class="produto__seta seta-esquerda">
@@ -93,10 +122,3 @@
 		</main>
   	</body>
 </html>
-
-
-<!-- Collections
-    Men
-    Women
-    About
-    Contact -->
