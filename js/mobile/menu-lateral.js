@@ -1,4 +1,4 @@
-const menu = document.querySelectorAll("[data-menu]");
+const menu = document.querySelectorAll("[data-botao-menu]");
 const menuLateral = document.querySelector("[data-menu-lateral]");
 
 menu.forEach((elemento) => {
