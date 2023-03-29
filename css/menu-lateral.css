@@ -1,0 +1,33 @@
+.lateral {
+    background-color: var(--branco);
+    box-sizing: border-box;
+    height: 100vh;
+    padding: 1.5em 2em 0;
+    position: absolute;
+    top: 0;
+    width: 60vw;
+    z-index: 999999;
+}
+
+.lateral__sair {
+    background-color: transparent;
+    border: none;
+    margin-bottom: 3.5em;
+}
+
+.menu-navegacao__lista-links {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5em;
+}
+
+.menu-navegacao__link {
+    color: var(--preto);
+    cursor: pointer;
+    font-weight: var(--font-weight-700);
+    text-decoration: none;
+}
+
+.menu-navegacao__link:hover {
+    text-decoration: underline;
+}
