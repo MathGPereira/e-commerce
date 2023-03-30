@@ -131,6 +131,10 @@
     background-color: rgb(241, 107, 11);
 }
 
+.produtos__adicionar-carrinho:active {
+    background-color: rgba(204, 90, 9, 0.932);
+}
+
 .produtos__adicionar-carrinho i {
     margin-right: 10px;
 }

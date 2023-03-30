@@ -1,0 +1,82 @@
+.carrinho-compras {
+    background-color: var(--branco);
+    border-radius: 15px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 8px rgba(70, 69, 69, 0.534);
+    height: 45vh;
+    margin: 1em .54em;
+    position: absolute;
+    width: 95vw;
+    z-index: 999999;
+}
+
+.carrinho-compras__titulo {
+    border-bottom: 1px solid #b6bcc898;
+    font-weight: var(--font-weight-700);
+    list-style: none;    
+    padding: 1.5em;
+}
+
+.carrinho-compras__corpo {
+    align-items: center;
+    box-sizing: border-box;
+    display: grid;
+    justify-content: left;
+    row-gap: 5px;
+    grid-template-columns: repeat(4, auto) 1fr;
+    grid-template-areas:
+    "imagem texto texto texto lixeira"
+    "imagem preco quantidade total lixeira"
+    "botao botao botao botao botao"
+    ;
+    padding: 2em;
+}
+
+.corpo__imagem {
+    grid-area: imagem;
+    margin-right: 10px;
+    width: 50px;
+}
+
+.corpo__info {
+    color: #979ca5;
+    font-size: 12px;
+    font-weight: var(--font-weight-700);
+    grid-area: texto;
+}
+
+.corpo__preco-descontado, .corpo__quantidade-unidades {
+    color: #979ca5;
+}
+
+.corpo__valor-total {
+    font-weight: var(--font-weight-700);
+}
+
+.corpo__delete {
+    cursor: pointer;
+    grid-area: lixeira;
+    justify-self: end;
+}
+
+.corpo__botao-checkout {
+    background-color: var(--laranja);
+    border: none;
+    border-radius: 8px;
+    box-shadow: 1px 1px 5px rgba(70, 69, 69, 0.534);
+    color: var(--branco);
+    cursor: pointer;
+    font-weight: var(--font-weight-700);
+    grid-area: botao;
+    margin-top: 1.5em;
+    padding: 1em 0;
+    transition: all .3s ease-in-out
+}
+
+.corpo__botao-checkout:hover {
+    background-color: rgb(241, 107, 11);
+}
+
+.corpo__botao-checkout:active {
+    background-color: rgba(204, 90, 9, 0.932);
+}
