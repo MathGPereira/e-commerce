@@ -4,7 +4,7 @@
     box-sizing: border-box;
     box-shadow: 2px 2px 8px rgba(70, 69, 69, 0.534);
     display: none;
-    height: 45vh;
+    height: 230px;
     margin: 1em .54em;
     position: absolute;
     width: 95vw;
@@ -59,6 +59,12 @@
     font-size: 12px;
     font-weight: var(--font-weight-700);
     grid-area: texto;
+}
+
+.corpo__info--vazio {
+    font-size: 20px;
+    margin-top: 3.3em;
+    text-align: center;
 }
 
 .corpo__preco-descontado, .corpo__quantidade-unidades {

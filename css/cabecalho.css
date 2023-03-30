@@ -19,6 +19,7 @@
     color: var(--branco);
     background-color: var(--laranja);
     border-radius: 100%;
+    display: none;
     font-size: 8px;
     padding: 2px;
     position: absolute;
