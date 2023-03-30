@@ -3,11 +3,27 @@
     border-radius: 15px;
     box-sizing: border-box;
     box-shadow: 2px 2px 8px rgba(70, 69, 69, 0.534);
+    display: none;
     height: 45vh;
     margin: 1em .54em;
     position: absolute;
     width: 95vw;
     z-index: 999999;
+}
+
+.carrinho-comprar--ativo {
+    animation: opacidadePositiva .5s ease-in-out;
+    display: block;
+}
+
+@keyframes opacidadePositiva {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .carrinho-compras__titulo {
