@@ -236,6 +236,7 @@
 
     .produtos__adicionar-carrinho {
         grid-area: botao;
+        margin-bottom: 0;
         width: auto;
     }
 

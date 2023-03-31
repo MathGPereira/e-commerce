@@ -39,9 +39,9 @@
         grid-template-areas:
         "logo menu-nav carrinho perfil"
         ;
-        grid-template-columns: 220px repeat(3, auto);
+        grid-template-columns: 220px auto 3fr 1fr;
         margin: 0 7em;
-        padding: 2.5em 0 4em;
+        padding: 2.5em 0 2.5em;
     }
 
     .cabecalho__titulo {
@@ -56,9 +56,19 @@
     .cabecalho__foto-perfil {
         justify-self: end;
         grid-area: perfil;
+        width: 60px;
     }
 
     .cabecalho__menu-hamburguer, .lateral__sair {
         display: none;
+    }
+
+    .menu-navegacao__link {
+        font-size: 22px;
+    }
+
+    .carrinho__quantidade-produtos {
+        font-size: 12px;
+        right: 3px;
     }
 }
