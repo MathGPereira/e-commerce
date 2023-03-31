@@ -29,6 +29,10 @@
     width: 100vw;
 }
 
+.principal__imagens-ligthbox {
+    display: none;
+}
+
 .seta-direita {
     margin-right: 1em;
     right: 0;
@@ -206,6 +210,7 @@
         grid-template-columns: auto 2fr;
         grid-template-rows: 1fr 1fr;
         grid-area: precos;
+        margin-bottom: 1em;
     }
 
     .produto__preco-descontado {
@@ -232,15 +237,40 @@
         font-size: 18px;
         font-weight: var(--font-weight-700);
         max-width: 150px;
+        padding: .5em;
     }
 
     .produtos__adicionar-carrinho {
         grid-area: botao;
         margin-bottom: 0;
+        padding: 1.5em;
         width: auto;
     }
 
     .adicionar-carrinho__texto {
         font-size: 20px;
+    }
+
+    .principal__imagens-ligthbox {
+        display: flex;
+        gap: 33px;
+        margin-top: -1em;
+    }
+
+    .imagens-ligthbox__imagem {
+        border-radius: 20px;
+        box-sizing: border-box;
+        cursor: pointer;
+        width: 100px;
+    }
+
+    .imagens-ligthbox__imagem:hover {
+        opacity: .6;
+    }
+
+    .imagens-ligthbox__imagem:active,
+    .imagens-ligthbox__imagem:checked {
+        outline: 3px solid var(--laranja);
+        opacity: .3;
     }
 }
