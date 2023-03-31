@@ -54,9 +54,16 @@
     }
 
     .cabecalho__foto-perfil {
+        box-sizing: border-box;
         justify-self: end;
         grid-area: perfil;
         width: 60px;
+    }
+
+    .cabecalho__foto-perfil:hover,
+    .cabecalho__foto-perfil:active {
+        border: 2px solid var(--laranja);
+        border-radius: 50%;
     }
 
     .cabecalho__menu-hamburguer, .lateral__sair {

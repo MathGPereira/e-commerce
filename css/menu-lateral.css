@@ -36,7 +36,8 @@
     text-decoration: none;
 }
 
-.menu-navegacao__link:hover {
+.menu-navegacao__link:hover,
+.menu-navegacao__link:active {
     text-decoration: underline;
 }
 
@@ -58,5 +59,10 @@
     .menu-navegacao__link {
         color: #a3a8b1;
         font-size: 20px;
+        padding-bottom: 2.7em;
+    }
+
+    .menu-navegacao__link:hover {
+        border-bottom: 5px solid var(--laranja);
     }
 }
