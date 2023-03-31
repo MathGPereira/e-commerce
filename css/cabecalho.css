@@ -31,3 +31,34 @@
     cursor: pointer;
     width: 35px;
 }
+
+@media screen and (min-width: 1440px) {
+    .cabecalho {
+        align-items: center;
+        border-bottom: 1px solid #a3a8b1;
+        grid-template-areas:
+        "logo menu-nav carrinho perfil"
+        ;
+        grid-template-columns: 220px repeat(3, auto);
+        margin: 0 7em;
+        padding: 2.5em 0 4em;
+    }
+
+    .cabecalho__titulo {
+        grid-area: logo;
+    }
+
+    .cabecalho__carrinho {
+        justify-self: end;
+        grid-area: carrinho;
+    }
+
+    .cabecalho__foto-perfil {
+        justify-self: end;
+        grid-area: perfil;
+    }
+
+    .cabecalho__menu-hamburguer, .lateral__sair {
+        display: none;
+    }
+}

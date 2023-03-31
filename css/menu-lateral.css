@@ -39,3 +39,24 @@
 .menu-navegacao__link:hover {
     text-decoration: underline;
 }
+
+@media screen and (min-width: 1440px) {
+    .lateral {
+        align-self: center;
+        grid-area: menu-nav;
+        padding: 0;
+        height: auto;
+        position: initial;
+        width: auto;
+    }
+
+    .menu-navegacao__lista-links {
+        flex-direction: row;
+        column-gap: 3em;
+    }
+
+    .menu-navegacao__link {
+        color: #a3a8b1;
+        font-size: 20px;
+    }
+}
