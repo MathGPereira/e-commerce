@@ -89,6 +89,7 @@
 .produto__quantidade {
     background-color: rgb(247, 248, 253);
     border-radius: 8px;
+    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     margin: 1em 0;
@@ -141,4 +142,104 @@
 
 .adicionar-carrinho__texto {
     color: var(--branco);
+}
+
+@media screen and (min-width: 1440px) {
+    .principal {
+        margin: 10em;
+    }
+
+    .principal__produto {
+        box-sizing: border-box;
+        column-gap: 5em;
+        display: grid;
+        grid-template-areas:
+            "imagem corpo"
+        ;
+        grid-template-columns: 500px 1fr;
+    }
+
+    .produto__imagem {
+        border-radius: 20px;
+        box-shadow: 1px 1px 10px rgba(70, 69, 69, 0.281);
+        grid-area: imagem;
+        width: 500px;
+    }
+
+    .produto__seta {
+        display: none;
+    }
+
+    .produto__corpo {
+        align-items: center;
+        display: grid;
+        grid-area: corpo;
+        grid-template-areas:
+            "subtitulo subtitulo subtitulo"
+            "titulo titulo titulo"
+            "descricao descricao descricao"
+            "precos precos precos"
+            "input input botao"
+        ;
+        grid-template-columns: 1fr 2fr 3fr;
+        row-gap: 15px;
+        width: 100%;
+    }
+
+    .produto__subtitulo {
+        font-size: 18px;
+        grid-area: subtitulo;
+    }
+
+    .produto__titulo {
+        font-size: 45px;
+        grid-area: titulo;
+    }
+
+    .produto__descricao {
+        font-size: 20px;
+        grid-area: descricao;
+    }
+
+    .produto__precos {
+        display: grid;
+        grid-template-columns: auto 2fr;
+        grid-template-rows: 1fr 1fr;
+        grid-area: precos;
+    }
+
+    .produto__preco-descontado {
+        font-size: 40px;
+    }
+
+    .produto__desconto {
+        font-size: 25px;
+        margin-right: auto;
+    }
+
+    .produto__preco-normal {
+        justify-self: left;
+        font-size: 20px;
+    }
+
+    .produto__quantidade {
+        grid-area: input;
+        margin: 0 1em 0 0;
+        width: auto;
+    }
+
+    .quantidade {
+        font-size: 18px;
+        font-weight: var(--font-weight-700);
+        max-width: 150px;
+    }
+
+    .produtos__adicionar-carrinho {
+        grid-area: botao;
+        width: auto;
+    }
+
+    .adicionar-carrinho__texto {
+        font-size: 20px;
+    }
 }
