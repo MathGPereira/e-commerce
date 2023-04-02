@@ -20,16 +20,6 @@
         margin-bottom: 2.5em;
     }
 
-    .dialog__seta {
-        background-color: var(--branco);
-        border-radius: 100%;
-        cursor: pointer;
-        padding: 19px 21px;
-        position: absolute;
-        top: 36%;
-        transition: all .3s;
-    }
-
     .dialog__item {
         cursor: pointer;
     }

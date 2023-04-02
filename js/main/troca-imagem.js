@@ -12,13 +12,3 @@ export function auxTrocaImagem() {
         });
     })
 }
-
-export function alteraImagemDoCarroussel(valorSeta, numeroDaImagem, banner) {
-    if(valorSeta === "+" && numeroDaImagem < 4) {
-        numeroDaImagem += 1;
-    }else if(valorSeta === "-" && numeroDaImagem > 1) {
-        numeroDaImagem -= 1;
-    }
-
-    banner.src = `./images/image-product-${numeroDaImagem}-thumbnail.jpg`
-}

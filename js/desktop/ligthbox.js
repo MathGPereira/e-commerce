@@ -11,13 +11,15 @@ dialog.setAttribute("data-imagem-backdrop", "");
 dialog.innerHTML = criaDialog();
 
 banner.addEventListener("click", () => {
-    corpoHtml.appendChild(dialog);
-    dialog.showModal();
-    auxTrocaImagem();
-
-    const dialogSair = document.querySelector("[data-dialog-sair]");
-
-    dialogSair.onclick = function (evento) {
-        dialog.close();
+    if(window.screen.width === 1440) {
+        corpoHtml.appendChild(dialog);
+        dialog.showModal();
+        auxTrocaImagem();
+    
+        const dialogSair = document.querySelector("[data-dialog-sair]");
+    
+        dialogSair.onclick = function () {
+            dialog.close();
+        }
     }
 });

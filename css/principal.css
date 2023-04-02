@@ -26,7 +26,12 @@
 }
 
 .produto__imagem {
+    display: none;
     width: 100vw;
+}
+
+.produto__imagem--visivel {
+    display: block;
 }
 
 .principal__imagens-ligthbox {
@@ -166,8 +171,13 @@
     .produto__imagem {
         border-radius: 20px;
         box-shadow: 1px 1px 10px rgba(70, 69, 69, 0.281);
+        display: block;
         grid-area: imagem;
         width: 500px;
+    }
+
+    .produto {
+        display: none;
     }
 
     .produto__seta {
