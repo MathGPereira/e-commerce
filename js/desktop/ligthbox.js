@@ -1,18 +1,23 @@
 import { criaDialog } from "./criaDialog.js";
-import { trocaImagem } from "./troca-imagem.js";
+import { auxTrocaImagem } from "../main/troca-imagem.js";
 
-if(window.screen.width >= 1440) {
-    const banner = document.querySelector("[data-banner]");
-    const corpoHtml = document.querySelector("[data-corpo]");
+const banner = document.querySelector("[data-banner]");
+const corpoHtml = document.querySelector("[data-corpo]");
+const dialog = document.createElement("dialog");
 
-    banner.addEventListener("click", () => {
-        const dialog = document.createElement("dialog");
+dialog.classList.add("dialog__desktop");
+dialog.setAttribute("data-imagem-backdrop", "");
 
-        dialog.classList.add("dialog__desktop");
-        dialog.setAttribute("data-imagem-backdrop", "");
+dialog.innerHTML = criaDialog();
 
-        dialog.innerHTML = criaDialog();
-        corpoHtml.appendChild(dialog);
-        dialog.showModal();
-    });
-}
+banner.addEventListener("click", () => {
+    corpoHtml.appendChild(dialog);
+    dialog.showModal();
+    auxTrocaImagem();
+
+    const dialogSair = document.querySelector("[data-dialog-sair]");
+
+    dialogSair.onclick = function (evento) {
+        dialog.close();
+    }
+});

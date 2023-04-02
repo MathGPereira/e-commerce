@@ -1,4 +1,4 @@
-import { trocaImagem } from "./troca-imagem.js";
+import { trocaImagem } from "../main/troca-imagem.js";
 
 const bannerPrincipal = document.querySelector("[data-banner]");
 const imagens = document.querySelectorAll("[data-imagem]");
