@@ -268,8 +268,7 @@
         opacity: .6;
     }
 
-    .imagens-ligthbox__imagem:active,
-    .imagens-ligthbox__imagem:checked {
+    .imagens-ligthbox__imagem:active {
         outline: 3px solid var(--laranja);
         opacity: .3;
     }
