@@ -7,4 +7,4 @@ O designe foi retirado do [Site do Frontend Mentor](https://www.frontendmentor.i
 
 ## Como visualizar a página
 
-*[Vercel](e-commerce-b4qa5vqt2-mathgpereira.vercel.app)
+1. [Vercel](e-commerce-b4qa5vqt2-mathgpereira.vercel.app)
