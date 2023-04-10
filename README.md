@@ -11,6 +11,10 @@
 Este é o primeiro projeto feito como desafio da mentoria de Pedro Marins.
 O designe foi retirado do [Site do Frontend Mentor](https://www.frontendmentor.io/challenges)
 
+## Contato
+
+1. [Linkedin](https://www.linkedin.com/in/matheuspereiradevfront/)
+
 ## Como visualizar a página
 
 1. [Vercel](e-commerce-b4qa5vqt2-mathgpereira.vercel.app)
